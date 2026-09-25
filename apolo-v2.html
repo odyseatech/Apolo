@@ -303,7 +303,7 @@ img{display:block;max-width:100%} a{color:inherit;text-decoration:none}
 
 /* WHY LIVEENGINES — vivid blue with CNC clip (same as services/pipeline) */
 .why-shell{background:linear-gradient(to bottom, var(--paper-3) 0 50%, var(--paper-2) 50% 100%);margin:0;padding:0;border:none}
-.why{border:none;outline:none;box-shadow:none;margin:0;padding-block:clamp(5rem,9vw,8rem);background:var(--accent);color:#FFFFFF;--rule:rgba(255,255,255,.18);--rule-strong:rgba(255,255,255,.28);--ink:#FFFFFF;--ink-2:#E8EBFF;--ink-3:#C4C7FF;--ink-4:#99A7FF;position:relative}
+.why{border:none;outline:none;box-shadow:none;margin:0;margin-top:-1px;padding-block:clamp(5rem,9vw,8rem);background:var(--accent);color:#FFFFFF;--rule:rgba(255,255,255,.18);--rule-strong:rgba(255,255,255,.28);--ink:#FFFFFF;--ink-2:#E8EBFF;--ink-3:#C4C7FF;--ink-4:#99A7FF;position:relative;clip-path:url(#svc-top)}
 .why .eyebrow{color:#C4C8D8;opacity:1}
 .why-header{display:grid;grid-template-columns:1fr 1fr;gap:3rem;margin-bottom:3rem;align-items:center}
 .why-header h2{font-size:var(--tx-d1);font-weight:700;letter-spacing:var(--tk-h);line-height:var(--lead-h)}
@@ -311,7 +311,7 @@ img{display:block;max-width:100%} a{color:inherit;text-decoration:none}
 .why-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem}
 @media(max-width:1000px){ .why-grid{grid-template-columns:repeat(2,1fr)} }
 @media(max-width:600px){ .why-grid{grid-template-columns:1fr} }
-.why-card{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:14px;padding:2rem;display:flex;flex-direction:column;gap:1rem;transition:transform .22s var(--ease-out), box-shadow .22s, border-color .22s}
+.why-card{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:14px;padding:2rem;display:flex;flex-direction:column;align-items:center;gap:1rem;transition:transform .22s var(--ease-out), box-shadow .22s, border-color .22s;text-align:center}
 .why-card:hover{transform:translateY(-4px);box-shadow:0 12px 28px rgba(17,17,133,.12);border-color:var(--accent-light)}
 .why-icon{width:48px;height:48px;display:grid;place-items:center;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.12);border-radius:12px;color:var(--accent-light);transition:background .2s, border-color .2s, color .2s}
 .why-card:hover .why-icon{background:var(--accent-light);border-color:var(--accent-light);color:#111185}
@@ -494,6 +494,7 @@ img{display:block;max-width:100%} a{color:inherit;text-decoration:none}
 <body>
 <svg width="0" height="0" aria-hidden="true" style="position:absolute"><defs>
   <clipPath id="svc-both" clipPathUnits="objectBoundingBox"><path d="M0,0 L0.32,0 C0.33,0 0.335,0.035 0.35,0.035 L0.65,0.035 C0.665,0.035 0.67,0 0.68,0 L1,0 L1,1 L0.68,1 C0.67,1 0.665,0.965 0.65,0.965 L0.35,0.965 C0.335,0.965 0.33,1 0.32,1 L0,1 Z"/></clipPath>
+  <clipPath id="svc-top" clipPathUnits="objectBoundingBox"><path d="M0,0 L0.32,0 C0.33,0 0.335,0.035 0.35,0.035 L0.65,0.035 C0.665,0.035 0.67,0 0.68,0 L1,0 L1,1 L0,1 Z"/></clipPath>
   <clipPath id="hero-cnc-bottom" clipPathUnits="objectBoundingBox"><path d="M0,0 H1 V1 L0.68,1 C0.67,1 0.665,0.965 0.65,0.965 L0.35,0.965 C0.335,0.965 0.33,1 0.32,1 L0,1 Z"/></clipPath>
 </defs></svg>
 <div class="progress" aria-hidden="true"></div>
