@@ -137,16 +137,16 @@ img{display:block;max-width:100%} a{color:inherit;text-decoration:none}
 .statement .wrap{text-align:center}
 .statement__text{text-align:center;margin-inline:auto}
 .statement__side{text-align:center}
-.problem-callout{margin-inline:auto;text-align:center;border-left:none;border-top:2px solid var(--accent);padding-left:0;padding-top:.8rem;max-width:42ch}
+.problem-callout{margin-inline:auto;text-align:center;border:none;padding-left:0;padding-top:.8rem;max-width:55ch}
 .statement__embed{width:90vw;min-height:80vh;border:1px solid var(--rule-strong);border-radius:12px;display:block;margin:75px auto 0;background:var(--paper)}
-.statement__text{font-family:var(--font-display);font-size:clamp(1.35rem,2.6vw,2.05rem);font-weight:600;line-height:1.22;letter-spacing:-.02em;max-width:62ch}
+.statement__text{font-family:var(--font-display);font-size:clamp(2.91rem,5.7vw,4.79rem);font-weight:700;line-height:1.05;letter-spacing:-.02em;max-width:62ch}
 .statement__text em{font-style:normal;color:var(--ink-3)}
 .statement__side{padding-top:.6rem}
 .statement__side p{font-size:var(--tx-sm);color:var(--ink-2);margin-bottom:1rem}
 .pill-row{display:flex;flex-wrap:wrap;gap:.4rem}
 .pill{font-family:var(--font-m);font-size:.7rem;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-2);border:1px solid var(--rule-strong);padding:.32rem .55rem;border-radius:999px;background:var(--paper-2)}
 .pill--accent{color:var(--accent);border-color:var(--accent-line);background:var(--accent-dim)}
-.problem-callout{margin-top:1.2rem;border-left:2px solid var(--accent);padding-left:1rem}
+.problem-callout{margin-top:1.2rem;border:none;padding-left:0;max-width:55ch}
 .problem-callout strong{font-size:var(--tx-sm);display:block}
 .problem-callout span{font-size:var(--tx-sm);color:var(--ink-2)}
 @media(max-width:850px){ .statement__grid{grid-template-columns:1fr} }
@@ -210,9 +210,7 @@ img{display:block;max-width:100%} a{color:inherit;text-decoration:none}
 .bound-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem}
 .bound-card{border:1px solid var(--rule-strong);border-radius:2px;padding:1.5rem;background:var(--paper)}
 .bound-card--no{background:var(--paper-2)}
-.bound-card h3{font-family:var(--font-m);font-size:var(--tx-xxs);letter-spacing:var(--tk-label);text-transform:uppercase;margin-bottom:1rem;display:flex;align-items:center;gap:.5rem}
-.bound-card h3::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--accent);display:inline-block}
-.bound-card--no h3::before{background:var(--ink-4)}
+.bound-card h3{font-family:var(--font-display);font-size:var(--tx-d2);font-weight:700;letter-spacing:var(--tk-h);line-height:1.05;margin-bottom:45px}
 .bound-list{list-style:none;display:flex;flex-direction:column;gap:.7rem}
 .bound-list li{font-size:var(--tx-sm);line-height:1.5;display:flex;gap:.6rem}
 .bound-list li span{flex:0 0 14px;margin-top:2px}
@@ -475,7 +473,7 @@ img{display:block;max-width:100%} a{color:inherit;text-decoration:none}
 <!-- NAV — logo izquierda / pill centro / CTA derecha -->
 <nav class="nav" aria-label="Principal">
   <a href="#" class="nav__logo" aria-label="Apolo — inicio">
-    <img src="images/le-logo.svg" alt="Apolo" width="145" height="46" style="width:145px;height:auto">
+    <img src="images/le-logo.svg" alt="Apolo" width="115" height="35" style="width:115px;height:auto">
   </a>
   <div class="nav__center">
     <div class="nav__pill">
@@ -534,14 +532,16 @@ img{display:block;max-width:100%} a{color:inherit;text-decoration:none}
   <div class="wrap">
     <div class="statement__grid">
       <div>
-        <p class="statement__text r">Muchas empresas tienen información técnica de alto valor. La comunican con PDFs y diagramas estáticos. <em>Sus audiencias observan la información. Nunca la pueden explorar.</em></p>
+        <span class="eyebrow">Nuestra Propuesta</span>
+        <h2 class="statement__text r" style="margin-top:.5rem">¿Explicarlo?.<br>Mejor haz que lo exploren.</h2>
+        
         <div class="problem-callout" style="margin-top:1.5rem">
-          <strong>El límite común</strong>
-          <span>Un proceso con 8 etapas y decenas de variables no se entiende con una foto. Una planta completa no cabe en un slide.</span>
+          <strong>El motor puede aparecer en un PDF. Un proceso puede estar explicado en un video. Una planta puede resumirse en un diagrama.</strong>
+          <span>Nosotros creemos que es mejor explorar e interactuar. Transformamos la información técnica en experiencias interactivas para tu web o plataforma. Deja que tu audiencia conozca de verdad qué es lo que haces.</span>
         </div>
       </div>
     </div>
-    <iframe class="statement__embed" src="about:blank" title="Contenido embebido" loading="lazy" allowfullscreen></iframe>
+    <iframe class="statement__embed" src="https://ledemo.ai.studio" title="Demo interactiva Apolo" loading="lazy" allowfullscreen></iframe>
       </div>
 </section>
 
@@ -553,22 +553,22 @@ img{display:block;max-width:100%} a{color:inherit;text-decoration:none}
       <article class="t-card">
         <div class="t-card__before"><span class="mono">Antes — estático</span><p class="t-quote t-quote--before">“Aquí tienes una imagen de nuestra planta.”</p><span class="t-limit">Solo observas · Una vista · Sin contexto</span></div>
         <div class="t-card__arrow" aria-hidden="true">→</div>
-        <div class="t-card__after"><span class="mono" style="color:var(--color-accent)">Con Apolo — explorable</span><p class="t-quote t-quote--after">“Explora cómo funciona nuestra planta.”</p><span class="t-adv">Ventaja: navegas por áreas, capas y flujos</span></div>
+        <div class="t-card__after"><span class="mono" style="color:var(--color-accent)">Live Engines— explorable</span><p class="t-quote t-quote--after">“Explora cómo funciona nuestra planta.”</p><span class="t-adv">Ventaja: navegas por áreas, capas y flujos</span></div>
       </article>
       <article class="t-card">
         <div class="t-card__before"><span class="mono">Antes — descripción</span><p class="t-quote t-quote--before">“Este equipo tiene estos componentes.”</p><span class="t-limit">Lista en PDF · Jerga técnica · Sin relación</span></div>
         <div class="t-card__arrow" aria-hidden="true">→</div>
-        <div class="t-card__after"><span class="mono" style="color:var(--color-accent)">Con Apolo — seleccionable</span><p class="t-quote t-quote--after">“Selecciona cada componente y comprende qué hace.”</p><span class="t-adv">Ventaja: comprensión por interacción, no por texto</span></div>
+        <div class="t-card__after"><span class="mono" style="color:var(--color-accent)">Live Engines — seleccionable</span><p class="t-quote t-quote--after">“Selecciona cada componente y comprende qué hace.”</p><span class="t-adv">Ventaja: comprensión por interacción, no por texto</span></div>
       </article>
       <article class="t-card">
         <div class="t-card__before"><span class="mono">Antes — dato fijo</span><p class="t-quote t-quote--before">“Esta estructura soporta determinada carga.”</p><span class="t-limit">Dato aislado · Sin causa-efecto</span></div>
         <div class="t-card__arrow" aria-hidden="true">→</div>
-        <div class="t-card__after"><span class="mono" style="color:var(--color-accent)">Con Apolo — variable</span><p class="t-quote t-quote--after">“Modifica la carga y observa cómo responde el sistema.”</p><span class="t-adv">Ventaja: entiendes el comportamiento, no solo el número</span></div>
+        <div class="t-card__after"><span class="mono" style="color:var(--color-accent)">Live Engines — variable</span><p class="t-quote t-quote--after">“Modifica la carga y observa cómo responde el sistema.”</p><span class="t-adv">Ventaja: entiendes el comportamiento, no solo el número</span></div>
       </article>
       <article class="t-card">
         <div class="t-card__before"><span class="mono">Antes — enumerado</span><p class="t-quote t-quote--before">“Este proceso tiene ocho etapas.”</p><span class="t-limit">Texto lineal · Sin flujo visible</span></div>
         <div class="t-card__arrow" aria-hidden="true">→</div>
-        <div class="t-card__after"><span class="mono" style="color:var(--color-accent)">Con Apolo — flujo</span><p class="t-quote t-quote--after">“Recorre las ocho etapas y observa cómo fluye el material.”</p><span class="t-adv">Ventaja: ves entradas, salidas y variables por etapa</span></div>
+        <div class="t-card__after"><span class="mono" style="color:var(--color-accent)">Live Engines — flujo</span><p class="t-quote t-quote--after">“Recorre las ocho etapas y observa cómo fluye el material.”</p><span class="t-adv">Ventaja: ves entradas, salidas y variables por etapa</span></div>
       </article>
     </div>
   </div>
@@ -582,7 +582,7 @@ img{display:block;max-width:100%} a{color:inherit;text-decoration:none}
       <p>Definir límites es parte del producto. Cada interacción existe para comprender — no para deslumbrar.</p>
     </div>
     <div class="bound-grid r r-d1">
-      <div class="bound-card bound-card--yes"><div class="thumb thumb--4-3" style="margin:-1.5rem -1.5rem 1rem;border-radius:12px 12px 0 0;border:none;border-bottom:1px solid var(--color-border-strong);height:160px"><img src="https://images.unsplash.com/photo-1518152006812-edab29b069ac?q=80&w=640&auto=format&fit=crop" alt="Sistema navegable" loading="lazy"><span class="thumb__label">Creamos — sistema navegable</span></div>
+      <div class="bound-card bound-card--yes">
         <h3>Creamos</h3>
         <ul class="bound-list">
           <li><span>●</span> Procesos, sistemas e infraestructura como experiencias navegables</li>
@@ -593,7 +593,7 @@ img{display:block;max-width:100%} a{color:inherit;text-decoration:none}
           <li><span>●</span> Experiencias web reutilizables en ventas, capacitación y web</li>
         </ul>
       </div>
-      <div class="bound-card bound-card--no"><div class="thumb thumb--4-3" style="margin:-1.5rem -1.5rem 1rem;border-radius:12px 12px 0 0;border:none;border-bottom:1px solid var(--color-border-strong);height:160px;opacity:.92"><img src="https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=640&auto=format&fit=crop" alt="No hacemos" loading="lazy"><span class="thumb__label">No hacemos — límite claro</span></div>
+      <div class="bound-card bound-card--no">
         <h3>No hacemos</h3>
         <ul class="bound-list">
           <li><span>✕</span> Modelado hiperrealista cinematográfico o VFX — la simplicidad que explica vale más</li>

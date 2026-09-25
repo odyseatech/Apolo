@@ -1,0 +1,8 @@
+{
+  "name": "solo motr",
+  "description": "Modelo 3D interactivo y dinamómetro de motor diésel Caterpillar de 6 cilindros en línea. Inspecciona componentes mecánicos, vista explosionada, y simula curvas de torque, potencia, turbo boost y telemetría a distintas velocidades y cargas.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
